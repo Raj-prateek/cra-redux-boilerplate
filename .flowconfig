@@ -1,0 +1,21 @@
+[ignore]
+.*/node_modules/flow-coverage-report/*.
+.*/node_modules/react-beautiful-dnd/*.
+.*/node_modules/draft-js/*.
+.*/node_modules/immutable/dist/immutable.js.flow*.
+.*/node_modules/config-chain/*.
+.*/node_modules/@babel/core/*
+.*/node_modules/flowgen/*
+
+[include]
+
+[libs]
+flow-typed
+
+[lints]
+
+[options]
+module.name_mapper='^\(\/?.*\)$' -> '<PROJECT_ROOT>/src/\1'
+
+[version]
+0.152.0
